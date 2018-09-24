@@ -6,33 +6,6 @@
 //  Copyright © 2018 Denis Efimov. All rights reserved.
 //
 
-public struct Picture: Codable {
-    
-    let uri: String?
-    
-}
-
-public struct PricesCategories: Codable {
-    
-    let items : [PriceCategory]?
-    
-    enum CodingKeys: String, CodingKey {
-        case items = "items"
-    }
-    
-    public init(from decoder: Decoder) throws {
-        
-        let values = try decoder.singleValueContainer()
-        self.items = try? values.decode([PriceCategory].self)
-        
-    }
-    
-}
-
-public struct PriceCategory: Codable {
-    let name: String?
-}
-
 public struct Place: Codable {
     
     let name : String?

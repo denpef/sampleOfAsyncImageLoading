@@ -10,6 +10,7 @@ import Nuke
 
 class NukeManager: LoaderProtocol {
     
+    // Очистка кеша
     static func cleanAllImageCache() {
         ImageCache.shared.removeAll()
     }

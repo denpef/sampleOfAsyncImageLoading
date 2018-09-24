@@ -11,6 +11,7 @@ import Kingfisher
 
 class KingfisherManager: LoaderProtocol {
     
+    // Очистка кеша
     static func cleanAllImageCache() {
         ImageCache.default.clearMemoryCache()
         ImageCache.default.clearDiskCache()

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/// Shows a list loaders.
+/// View показывает список загрузчиков для выбора библиотеки
 class ImageLoadersViewController: UIViewController, StoryboardInitializable {
     
     let disposeBag = DisposeBag()

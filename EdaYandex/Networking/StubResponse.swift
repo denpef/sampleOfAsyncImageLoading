@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Класс реализует возможность сформировать Data для теста
 class StubResponse {
     static func fromJSONFile(filePath:String) -> Data {
         guard let data = try? Data(contentsOf: URL(fileURLWithPath: filePath)) else {

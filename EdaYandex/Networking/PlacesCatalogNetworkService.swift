@@ -22,12 +22,8 @@ public func JSONResponseDataFormatter(_ data: Data) -> Data {
 }
 
 public var PlacesCatalogProvider = MoyaProvider<PlacesCatalogNetworkService>(
-//    endpointClosure:endpointClosure,
-//    requestClosure:requestClosure,
     plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)]
 )
-
-//public let PlacesCatalogProvider = MoyaProvider<PlacesCatalogNetworkService>()
 
 public enum PlacesCatalogNetworkService {
     case catalog

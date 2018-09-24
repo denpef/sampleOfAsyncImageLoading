@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 import RxOptional
 
+// MARK: - Protocols
+
 public protocol PlacesCatalogViewModelInputs {
     var clearCache: PublishSubject<LoaderLibrary> { get }
     var title: Observable<String> { get }
@@ -31,35 +33,40 @@ public protocol PlacesCatalogViewModelType {
     var outputs: PlacesCatalogViewModelOutputs { get }
 }
 
+// MARK: - ViewModel
+
 public class PlacesCatalogViewModel: PlacesCatalogViewModelType, PlacesCatalogViewModelInputs, PlacesCatalogViewModelOutputs {
     
-    public var loaderLybrary: LoaderLibrary?
-    
     private let disposeBag = DisposeBag()
-    private let error = PublishSubject<Swift.Error>()
     
-    public var selectedItem: PublishSubject<Place>
-    public var places: Observable<[Place]>
-    public var clearCache = PublishSubject<LoaderLibrary>()
-    public var showLoadersList: PublishSubject<Void>
     public var inputs: PlacesCatalogViewModelInputs { return self}
     public var outputs: PlacesCatalogViewModelOutputs { return self}
+    
+    // MARK: - Inputs properties
+    public var clearCache = PublishSubject<LoaderLibrary>()
     public var title: Observable<String>
     public var setCurrentLoader: BehaviorSubject<LoaderLibrary>
     public var reload: PublishSubject<Void>
     public var alertMessage: Observable<String>
     
+    // MARK: - Outputs properties
+    public var selectedItem: PublishSubject<Place>
+    public var places: Observable<[Place]>
+    public var showLoadersList: PublishSubject<Void>
+    public var loaderLybrary: LoaderLibrary?
+    
     init(initialLoader: LoaderLibrary = .SDWebImage) {
         
-        self.loaderLybrary = initialLoader
-        
-        self.selectedItem = PublishSubject<Place>()
-        self.reload = PublishSubject<Void>()
         self.setCurrentLoader = BehaviorSubject<LoaderLibrary>(value: initialLoader)
-        self.showLoadersList = PublishSubject<Void>()
         
         let _alertMessage = PublishSubject<String>()
         self.alertMessage = _alertMessage.asObservable()
+        
+        self.reload = PublishSubject<Void>()
+        
+        self.selectedItem = PublishSubject<Place>()
+        self.showLoadersList = PublishSubject<Void>()
+        self.loaderLybrary = initialLoader
         
         self.title = self.setCurrentLoader.asObservable()
             .map { $0.rawValue }
@@ -81,6 +88,7 @@ public class PlacesCatalogViewModel: PlacesCatalogViewModelType, PlacesCatalogVi
         
     }
     
+    // Функция вызывает очистку кеша нужной библиотеки
     private func flushCache(loaderLibrary: LoaderLibrary) {
         
         switch loaderLybrary! {

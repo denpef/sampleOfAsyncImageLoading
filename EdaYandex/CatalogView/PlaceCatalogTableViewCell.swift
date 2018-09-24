@@ -13,6 +13,8 @@ import Kingfisher
 
 class PlaceCatalogTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+    
     var urlString: String?
     
     @IBOutlet weak var progressView: UIProgressView!
@@ -21,6 +23,8 @@ class PlaceCatalogTableViewCell: UITableViewCell {
     @IBOutlet weak var deliveryLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
 
+    // MARK: - Setup functions
+    
     public func configure(place: Place, loaderLibrary: LoaderLibrary) {
         
         // name
@@ -59,6 +63,8 @@ class PlaceCatalogTableViewCell: UITableViewCell {
 
     }
     
+    // MARK: - Loading functions
+    
     private func loadWithKingfisher(imageUrl: URL) {
         
         self.mainImage.kf.setImage(with: imageUrl,
@@ -69,9 +75,7 @@ class PlaceCatalogTableViewCell: UITableViewCell {
                                             self.progressCompletion(receivedSize: Int(receivedSize), expectedSize: Int(expectedSize))
                                         }
                                     }) { (image, error, cacheType, url) in
-                                        DispatchQueue.main.async{
-                                            self.isCompleted()
-                                        }
+                                        self.isCompleted()
                                     }
         
     }
@@ -88,9 +92,7 @@ class PlaceCatalogTableViewCell: UITableViewCell {
                                 self.progressCompletion(receivedSize: Int(receivedSize), expectedSize: Int(expectedSize))
                             }
                         }) { (response, error) in
-                            DispatchQueue.main.async {
-                                self.isCompleted()
-                            }
+                            self.isCompleted()
         }
 
     }
@@ -102,12 +104,13 @@ class PlaceCatalogTableViewCell: UITableViewCell {
                 self.progressCompletion(receivedSize: receivedSize, expectedSize: expectedSize)
             }
         }) { (image, error, cacheType, url) in
-            DispatchQueue.main.async{
-                self.isCompleted()
-            }
+            self.isCompleted()
         }
         
     }
+    
+    
+    // MARK: - Completions
     
     private func progressCompletion(receivedSize: Int, expectedSize: Int) {
             var progress: Float = 0.0

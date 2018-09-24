@@ -9,10 +9,10 @@
 import UIKit
 import RxSwift
 
-/// Type that defines possible coordination results of the `ImageLoaderCoordinator`.
+/// Всевозможные результаты работы, которые может возвращать `ImageLoaderCoordinator`.
 ///
-/// - loader: Loader was choosen.
-/// - cancel: Cancel button was tapped.
+/// - loader: Loader был выбран
+/// - cancel: нажата кнопка Cancel 
 enum ImageLoadersCoordinationResult {
     case loader(LoaderLibrary)
     case cancel

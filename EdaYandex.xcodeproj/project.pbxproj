@@ -37,6 +37,8 @@
 		DBD9E2E12158C69900C1205B /* CatalogResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DBD9E2E02158C69900C1205B /* CatalogResponse.json */; };
 		DBD9E2E32158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E22158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift */; };
 		DBD9E2E52158D18400C1205B /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E42158D18400C1205B /* StubResponse.swift */; };
+		DBD9E2E72158DB5B00C1205B /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E62158DB5B00C1205B /* Picture.swift */; };
+		DBD9E2E92158DB7200C1205B /* PriceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E82158DB7200C1205B /* PriceCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		DBD9E2E02158C69900C1205B /* CatalogResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CatalogResponse.json; sourceTree = "<group>"; };
 		DBD9E2E22158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogViewModelSpec.swift; sourceTree = "<group>"; };
 		DBD9E2E42158D18400C1205B /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
+		DBD9E2E62158DB5B00C1205B /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		DBD9E2E82158DB7200C1205B /* PriceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCategory.swift; sourceTree = "<group>"; };
 		F08CFB2F1047868273202BEF /* Pods-EdaYandex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex.debug.xcconfig"; sourceTree = "<group>"; };
 		F79FE9F84AA6E4AB7346EB8E /* Pods-EdaYandexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandexUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				DB2C84E12153FB5C0048BA02 /* Place.swift */,
+				DBD9E2E62158DB5B00C1205B /* Picture.swift */,
+				DBD9E2E82158DB7200C1205B /* PriceCategory.swift */,
 				DB2C84F5215572FA0048BA02 /* LoaderLibrary.swift */,
 			);
 			path = Model;
@@ -616,6 +622,7 @@
 				DB2C84D32153F66B0048BA02 /* StoryboardInitializable.swift in Sources */,
 				DB2C84CF2153F4960048BA02 /* PlacesCatalogViewModel.swift in Sources */,
 				DB2C84CB2153EFAB0048BA02 /* AppCoordinator.swift in Sources */,
+				DBD9E2E92158DB7200C1205B /* PriceCategory.swift in Sources */,
 				DB2C84D12153F4A10048BA02 /* PlacesCatalogCoordinator.swift in Sources */,
 				DB2C849F2153ECBA0048BA02 /* PlacesCatalogViewController.swift in Sources */,
 				DB2C849D2153ECBA0048BA02 /* AppDelegate.swift in Sources */,
@@ -629,6 +636,7 @@
 				DB7FC6232157D11000F86E79 /* KingfisherManager.swift in Sources */,
 				DB7FC6292157D25D00F86E79 /* LoaderProtocol.swift in Sources */,
 				DB2C84EE2155719F0048BA02 /* ImageLoadersViewModel.swift in Sources */,
+				DBD9E2E72158DB5B00C1205B /* Picture.swift in Sources */,
 				DB2C84E22153FB5C0048BA02 /* Place.swift in Sources */,
 				DB2C84CD2153F0820048BA02 /* BaseCoordinator.swift in Sources */,
 			);

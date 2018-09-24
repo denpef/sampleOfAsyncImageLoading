@@ -12,6 +12,8 @@ protocol StoryboardInitializable {
     static var storyboardIdentifier: String { get }
 }
 
+// Расширение UIViewController для реализации
+// навигации между View с помощью Cordinator
 extension StoryboardInitializable where Self: UIViewController {
     
     static var storyboardIdentifier: String {

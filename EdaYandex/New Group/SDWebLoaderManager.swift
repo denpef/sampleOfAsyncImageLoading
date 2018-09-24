@@ -10,6 +10,7 @@ import SDWebImage
 
 class SDWebLoaderManager: LoaderProtocol {
     
+    // Очистка кеша
     static func cleanAllImageCache() {
         SDWebImageManager.shared().imageCache?.clearMemory()
         SDWebImageManager.shared().imageCache?.clearDisk(onCompletion: nil)

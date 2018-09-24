@@ -18,17 +18,22 @@ class PlacesCatalogCoordinator: BaseCoordinator<Void> {
     }
     
     override func start() -> Observable<Void> {
+        
+        // Инициализация
         let viewModel = PlacesCatalogViewModel()
         let viewController = PlacesCatalogViewController.initFromStoryboard(name: "Main")
         let navigationController = UINavigationController(rootViewController: viewController)
         
         viewController.viewModel = viewModel
         
+        // Для примера - обработчик выбора ресторана,
+        // можно вызвать переход на другой View например
         viewModel.selectedItem.asObservable()
             .subscribe(onNext: {
                 print("Selected place: \($0.name ?? "?")") })
             .disposed(by: disposeBag)
         
+        // Переход на View для выбора текущей библиотеки
         viewModel.showLoadersList.asObservable()
             .flatMap { [weak self] _ -> Observable<LoaderLibrary?> in
                 guard let `self` = self else { return .empty() }
@@ -39,11 +44,16 @@ class PlacesCatalogCoordinator: BaseCoordinator<Void> {
             .bind(to: viewModel.setCurrentLoader.asObserver())
             .disposed(by: disposeBag)
 
+        // Обработчик выбоа текущей библиотеки
         _ = viewModel.setCurrentLoader.asObservable()
             .subscribe({
                 if let loaderLibrary = $0.element {
+                    // Если необходимо - вызывается очистка кеша
+                    // текущей (еще не измененной) библиотеки
                     viewModel.clearCache.asObserver().onNext(viewModel.loaderLybrary!)
+                    // Смена текущей библиотеки
                     viewModel.loaderLybrary = loaderLibrary
+                    // Перезагрузка таблицы
                     viewModel.reload.asObserver().onNext(())
                 }
             })
