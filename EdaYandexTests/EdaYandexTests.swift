@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import EdaYandex
 
 class EdaYandexTests: XCTestCase {

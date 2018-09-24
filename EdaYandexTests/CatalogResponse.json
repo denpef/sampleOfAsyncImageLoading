@@ -1,0 +1,132 @@
+{
+    "payload": {
+        "foundPlaces": [
+            {
+                "place": {
+                    "id": 4865,
+                    "name": "Макдоналдс",
+                    "description": null,
+                    "slug": "mcdonalds_pushka",
+                    "market": false,
+                    "tags": [
+                        {
+                            "id": 569,
+                            "name": "Бургеры"
+                        },
+                        {
+                            "id": 235,
+                            "name": "Завтраки"
+                        }
+                    ],
+                    "priceCategory": {
+                        "id": 1,
+                        "name": "₽",
+                        "value": 0
+                    },
+                    "rating": 4.8,
+                    "minimalOrderPrice": 0,
+                    "minimalDeliveryCost": 0,
+                    "isNew": false,
+                    "items": [],
+                    "picture": {
+                        "uri": "/images/places/c741/c741a77ebc1a29c504fb950692c6345c-{w}x{h}.jpg",
+                        "ratio": 1.33
+                    },
+                    "isPromoAvailable": false,
+                    "personalizationStrategy": null,
+                    "footerDescription": "Информация о потребительских свойствах продукции доступна в ресторане и на <a href=\"https://mcdonalds.ru/materials/consumer-properties.pdf\">сайте</a>.<br>ЗАО \"МОСКВА - МАКДОНАЛДС\", 125009, Москва г, Газетный пер, дом № 17, ИНН 7710044132, рег.номер 1027700516843.",
+                    "deliveryConditions": "Доставка 99 ₽",
+                    "promoTypes": [],
+                    "type": {
+                        "id": 1,
+                        "name": "Ресторан"
+                    }
+                },
+                "locationParams": {
+                    "deliveryTime": {
+                        "min": 10,
+                        "max": 20
+                    },
+                    "available": true,
+                    "distance": 0.4129523547846089,
+                    "availableFrom": null,
+                    "availableTo": "2018-09-24T23:00:00+03:00",
+                    "eatDay": 0
+                },
+                "surge": null
+            },
+            {
+                "place": {
+                    "id": 9251,
+                    "name": "Город-сад",
+                    "description": null,
+                    "slug": "GorodSad_B_Patriarshy",
+                    "market": false,
+                    "tags": [
+                        {
+                            "id": 39,
+                            "name": "Вегетарианская"
+                        },
+                        {
+                            "id": 170,
+                            "name": "Здоровая еда"
+                        },
+                        {
+                            "id": 595,
+                            "name": "Постное меню"
+                        },
+                        {
+                            "id": 235,
+                            "name": "Завтраки"
+                        },
+                        {
+                            "id": 287,
+                            "name": "Веганская"
+                        }
+                    ],
+                    "priceCategory": {
+                        "id": 1,
+                        "name": "₽",
+                        "value": 0
+                    },
+                    "rating": 4.8,
+                    "minimalOrderPrice": 0,
+                    "minimalDeliveryCost": 0,
+                    "isNew": false,
+                    "items": [],
+                    "picture": {
+                        "uri": "/images/places/30eb/30eb4ff1acede6a94daf85e2e6b97ce7-{w}x{h}.jpg",
+                        "ratio": 1.33
+                    },
+                    "isPromoAvailable": false,
+                    "personalizationStrategy": null,
+                    "footerDescription": "",
+                    "deliveryConditions": "Бесплатно при заказе от 500 ₽",
+                    "promoTypes": [
+                        {
+                            "id": 5,
+                            "name": "Скидка на меню",
+                            "pictureUri": "/uploads/promos/5b73/5b73e9ea19587.png"
+                        }
+                    ],
+                    "type": {
+                        "id": 1,
+                        "name": "Ресторан"
+                    }
+                },
+                "locationParams": {
+                    "deliveryTime": {
+                        "min": 15,
+                        "max": 25
+                    },
+                    "available": true,
+                    "distance": 0.25092527622960437,
+                    "availableFrom": null,
+                    "availableTo": "2018-09-24T22:00:00+03:00",
+                    "eatDay": 0
+                },
+                "surge": null
+            }
+        ]
+    }
+}

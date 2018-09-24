@@ -7,13 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9FA3947C58FD4FD4312727 /* Pods_EdaYandex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A179AAE11DA5778308A932AA /* Pods_EdaYandex.framework */; };
+		81474A81566D4925EB188294 /* Pods_EdaYandexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230067668BA6439274D81382 /* Pods_EdaYandexTests.framework */; };
+		8F8BBEBF56E783CF4B6A42D1 /* Pods_EdaYandexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5ADA98FC36D82235B872BF /* Pods_EdaYandexUITests.framework */; };
 		DB2C849D2153ECBA0048BA02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C849C2153ECBA0048BA02 /* AppDelegate.swift */; };
-		DB2C849F2153ECBA0048BA02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C849E2153ECBA0048BA02 /* ViewController.swift */; };
+		DB2C849F2153ECBA0048BA02 /* PlacesCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C849E2153ECBA0048BA02 /* PlacesCatalogViewController.swift */; };
 		DB2C84A22153ECBA0048BA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C84A02153ECBA0048BA02 /* Main.storyboard */; };
 		DB2C84A42153ECBC0048BA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C84A32153ECBC0048BA02 /* Assets.xcassets */; };
 		DB2C84A72153ECBC0048BA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C84A52153ECBC0048BA02 /* LaunchScreen.storyboard */; };
 		DB2C84B22153ECBC0048BA02 /* EdaYandexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84B12153ECBC0048BA02 /* EdaYandexTests.swift */; };
 		DB2C84BD2153ECBC0048BA02 /* EdaYandexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84BC2153ECBC0048BA02 /* EdaYandexUITests.swift */; };
+		DB2C84CB2153EFAB0048BA02 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84CA2153EFAB0048BA02 /* AppCoordinator.swift */; };
+		DB2C84CD2153F0820048BA02 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84CC2153F0820048BA02 /* BaseCoordinator.swift */; };
+		DB2C84CF2153F4960048BA02 /* PlacesCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84CE2153F4960048BA02 /* PlacesCatalogViewModel.swift */; };
+		DB2C84D12153F4A10048BA02 /* PlacesCatalogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84D02153F4A10048BA02 /* PlacesCatalogCoordinator.swift */; };
+		DB2C84D32153F66B0048BA02 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84D22153F66B0048BA02 /* StoryboardInitializable.swift */; };
+		DB2C84DA2153F88F0048BA02 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84D92153F88F0048BA02 /* APIManager.swift */; };
+		DB2C84DF2153F9E40048BA02 /* PlacesCatalogNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84DE2153F9E40048BA02 /* PlacesCatalogNetworkService.swift */; };
+		DB2C84E22153FB5C0048BA02 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84E12153FB5C0048BA02 /* Place.swift */; };
+		DB2C84E6215449330048BA02 /* PlaceCatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84E5215449330048BA02 /* PlaceCatalogTableViewCell.swift */; };
+		DB2C84EE2155719F0048BA02 /* ImageLoadersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84ED2155719F0048BA02 /* ImageLoadersViewModel.swift */; };
+		DB2C84F0215571AB0048BA02 /* ImageLoadersViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84EF215571AB0048BA02 /* ImageLoadersViewCoordinator.swift */; };
+		DB2C84F2215571B60048BA02 /* ImageLoadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84F1215571B60048BA02 /* ImageLoadersViewController.swift */; };
+		DB2C84F6215572FA0048BA02 /* LoaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C84F5215572FA0048BA02 /* LoaderLibrary.swift */; };
+		DB7FC6232157D11000F86E79 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7FC6222157D11000F86E79 /* KingfisherManager.swift */; };
+		DB7FC6252157D1E000F86E79 /* NukeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7FC6242157D1E000F86E79 /* NukeManager.swift */; };
+		DB7FC6272157D20600F86E79 /* SDWebLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7FC6262157D20600F86E79 /* SDWebLoaderManager.swift */; };
+		DB7FC6292157D25D00F86E79 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7FC6282157D25D00F86E79 /* LoaderProtocol.swift */; };
+		DBD9E2E12158C69900C1205B /* CatalogResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DBD9E2E02158C69900C1205B /* CatalogResponse.json */; };
+		DBD9E2E32158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E22158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift */; };
+		DBD9E2E52158D18400C1205B /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9E2E42158D18400C1205B /* StubResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230067668BA6439274D81382 /* Pods_EdaYandexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdaYandexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D088587E23682ED6012DB1 /* Pods-EdaYandexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandexTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandexTests/Pods-EdaYandexTests.release.xcconfig"; sourceTree = "<group>"; };
+		52F9BDC9B7179740B11C9A8D /* Pods-EdaYandexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandexTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandexTests/Pods-EdaYandexTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D4FFF3C65DD3B9F43650E90 /* Pods-EdaYandexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandexUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A2406B453D3C9E42AE79971 /* Pods-EdaYandex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandex.release.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex.release.xcconfig"; sourceTree = "<group>"; };
+		8A5ADA98FC36D82235B872BF /* Pods_EdaYandexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdaYandexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179AAE11DA5778308A932AA /* Pods_EdaYandex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdaYandex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2C84992153ECBA0048BA02 /* EdaYandex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdaYandex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2C849C2153ECBA0048BA02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB2C849E2153ECBA0048BA02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB2C849E2153ECBA0048BA02 /* PlacesCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogViewController.swift; sourceTree = "<group>"; };
 		DB2C84A12153ECBA0048BA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2C84A32153ECBC0048BA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2C84A62153ECBC0048BA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +77,28 @@
 		DB2C84B82153ECBC0048BA02 /* EdaYandexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdaYandexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2C84BC2153ECBC0048BA02 /* EdaYandexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdaYandexUITests.swift; sourceTree = "<group>"; };
 		DB2C84BE2153ECBC0048BA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2C84CA2153EFAB0048BA02 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DB2C84CC2153F0820048BA02 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		DB2C84CE2153F4960048BA02 /* PlacesCatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogViewModel.swift; sourceTree = "<group>"; };
+		DB2C84D02153F4A10048BA02 /* PlacesCatalogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogCoordinator.swift; sourceTree = "<group>"; };
+		DB2C84D22153F66B0048BA02 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		DB2C84D92153F88F0048BA02 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DB2C84DE2153F9E40048BA02 /* PlacesCatalogNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogNetworkService.swift; sourceTree = "<group>"; };
+		DB2C84E12153FB5C0048BA02 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DB2C84E5215449330048BA02 /* PlaceCatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCatalogTableViewCell.swift; sourceTree = "<group>"; };
+		DB2C84ED2155719F0048BA02 /* ImageLoadersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadersViewModel.swift; sourceTree = "<group>"; };
+		DB2C84EF215571AB0048BA02 /* ImageLoadersViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadersViewCoordinator.swift; sourceTree = "<group>"; };
+		DB2C84F1215571B60048BA02 /* ImageLoadersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadersViewController.swift; sourceTree = "<group>"; };
+		DB2C84F5215572FA0048BA02 /* LoaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderLibrary.swift; sourceTree = "<group>"; };
+		DB7FC6222157D11000F86E79 /* KingfisherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		DB7FC6242157D1E000F86E79 /* NukeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NukeManager.swift; sourceTree = "<group>"; };
+		DB7FC6262157D20600F86E79 /* SDWebLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebLoaderManager.swift; sourceTree = "<group>"; };
+		DB7FC6282157D25D00F86E79 /* LoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
+		DBD9E2E02158C69900C1205B /* CatalogResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CatalogResponse.json; sourceTree = "<group>"; };
+		DBD9E2E22158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCatalogViewModelSpec.swift; sourceTree = "<group>"; };
+		DBD9E2E42158D18400C1205B /* StubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
+		F08CFB2F1047868273202BEF /* Pods-EdaYandex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex.debug.xcconfig"; sourceTree = "<group>"; };
+		F79FE9F84AA6E4AB7346EB8E /* Pods-EdaYandexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdaYandexUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9FA3947C58FD4FD4312727 /* Pods_EdaYandex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81474A81566D4925EB188294 /* Pods_EdaYandexTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +122,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8BBEBF56E783CF4B6A42D1 /* Pods_EdaYandexUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FBE6C9369CF6799286F451A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F08CFB2F1047868273202BEF /* Pods-EdaYandex.debug.xcconfig */,
+				8A2406B453D3C9E42AE79971 /* Pods-EdaYandex.release.xcconfig */,
+				52F9BDC9B7179740B11C9A8D /* Pods-EdaYandexTests.debug.xcconfig */,
+				24D088587E23682ED6012DB1 /* Pods-EdaYandexTests.release.xcconfig */,
+				F79FE9F84AA6E4AB7346EB8E /* Pods-EdaYandexUITests.debug.xcconfig */,
+				7D4FFF3C65DD3B9F43650E90 /* Pods-EdaYandexUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB2C84902153ECBA0048BA02 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +149,8 @@
 				DB2C84B02153ECBC0048BA02 /* EdaYandexTests */,
 				DB2C84BB2153ECBC0048BA02 /* EdaYandexUITests */,
 				DB2C849A2153ECBA0048BA02 /* Products */,
+				4FBE6C9369CF6799286F451A /* Pods */,
+				E91A37D9BBE6E10EF10CE856 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +168,13 @@
 			isa = PBXGroup;
 			children = (
 				DB2C849C2153ECBA0048BA02 /* AppDelegate.swift */,
-				DB2C849E2153ECBA0048BA02 /* ViewController.swift */,
+				DB2C84CA2153EFAB0048BA02 /* AppCoordinator.swift */,
+				DB2C84D42153F6F40048BA02 /* Libs */,
+				DB7FC6212157D0DA00F86E79 /* ImageLoadersManagersView */,
+				DB2C84EC2155715B0048BA02 /* ImageLoaders */,
+				DB2C84DB2153F8970048BA02 /* Networking */,
+				DB2C84E02153FB4F0048BA02 /* Model */,
+				DB2C84E721544BF50048BA02 /* CatalogView */,
 				DB2C84A02153ECBA0048BA02 /* Main.storyboard */,
 				DB2C84A32153ECBC0048BA02 /* Assets.xcassets */,
 				DB2C84A52153ECBC0048BA02 /* LaunchScreen.storyboard */,
@@ -110,7 +186,9 @@
 		DB2C84B02153ECBC0048BA02 /* EdaYandexTests */ = {
 			isa = PBXGroup;
 			children = (
+				DBD9E2E02158C69900C1205B /* CatalogResponse.json */,
 				DB2C84B12153ECBC0048BA02 /* EdaYandexTests.swift */,
+				DBD9E2E22158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift */,
 				DB2C84B32153ECBC0048BA02 /* Info.plist */,
 			);
 			path = EdaYandexTests;
@@ -125,6 +203,77 @@
 			path = EdaYandexUITests;
 			sourceTree = "<group>";
 		};
+		DB2C84D42153F6F40048BA02 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				DB2C84D22153F66B0048BA02 /* StoryboardInitializable.swift */,
+				DB2C84CC2153F0820048BA02 /* BaseCoordinator.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		DB2C84DB2153F8970048BA02 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9E2E42158D18400C1205B /* StubResponse.swift */,
+				DB2C84D92153F88F0048BA02 /* APIManager.swift */,
+				DB2C84DE2153F9E40048BA02 /* PlacesCatalogNetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DB2C84E02153FB4F0048BA02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2C84E12153FB5C0048BA02 /* Place.swift */,
+				DB2C84F5215572FA0048BA02 /* LoaderLibrary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB2C84E721544BF50048BA02 /* CatalogView */ = {
+			isa = PBXGroup;
+			children = (
+				DB2C84E5215449330048BA02 /* PlaceCatalogTableViewCell.swift */,
+				DB2C84CE2153F4960048BA02 /* PlacesCatalogViewModel.swift */,
+				DB2C84D02153F4A10048BA02 /* PlacesCatalogCoordinator.swift */,
+				DB2C849E2153ECBA0048BA02 /* PlacesCatalogViewController.swift */,
+			);
+			path = CatalogView;
+			sourceTree = "<group>";
+		};
+		DB2C84EC2155715B0048BA02 /* ImageLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				DB2C84ED2155719F0048BA02 /* ImageLoadersViewModel.swift */,
+				DB2C84EF215571AB0048BA02 /* ImageLoadersViewCoordinator.swift */,
+				DB2C84F1215571B60048BA02 /* ImageLoadersViewController.swift */,
+			);
+			path = ImageLoaders;
+			sourceTree = "<group>";
+		};
+		DB7FC6212157D0DA00F86E79 /* ImageLoadersManagersView */ = {
+			isa = PBXGroup;
+			children = (
+				DB7FC6282157D25D00F86E79 /* LoaderProtocol.swift */,
+				DB7FC6222157D11000F86E79 /* KingfisherManager.swift */,
+				DB7FC6242157D1E000F86E79 /* NukeManager.swift */,
+				DB7FC6262157D20600F86E79 /* SDWebLoaderManager.swift */,
+			);
+			name = ImageLoadersManagersView;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E91A37D9BBE6E10EF10CE856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A179AAE11DA5778308A932AA /* Pods_EdaYandex.framework */,
+				230067668BA6439274D81382 /* Pods_EdaYandexTests.framework */,
+				8A5ADA98FC36D82235B872BF /* Pods_EdaYandexUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2C84C12153ECBC0048BA02 /* Build configuration list for PBXNativeTarget "EdaYandex" */;
 			buildPhases = (
+				0EB334E287C153A47EDA1247 /* [CP] Check Pods Manifest.lock */,
 				DB2C84952153ECBA0048BA02 /* Sources */,
 				DB2C84962153ECBA0048BA02 /* Frameworks */,
 				DB2C84972153ECBA0048BA02 /* Resources */,
+				200C27B1C8B96417E6584903 /* [CP] Embed Pods Frameworks */,
+				1BB94AE3CC064FC152C30DBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2C84C42153ECBC0048BA02 /* Build configuration list for PBXNativeTarget "EdaYandexTests" */;
 			buildPhases = (
+				71763FEDC18FFC8FF2938529 /* [CP] Check Pods Manifest.lock */,
 				DB2C84A92153ECBC0048BA02 /* Sources */,
 				DB2C84AA2153ECBC0048BA02 /* Frameworks */,
 				DB2C84AB2153ECBC0048BA02 /* Resources */,
+				C33903B123F25DF578B3E0B3 /* [CP] Embed Pods Frameworks */,
+				E5BF5CDAA8F93366F61FDD57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2C84C72153ECBC0048BA02 /* Build configuration list for PBXNativeTarget "EdaYandexUITests" */;
 			buildPhases = (
+				9D658C7BC446A743826A6B03 /* [CP] Check Pods Manifest.lock */,
 				DB2C84B42153ECBC0048BA02 /* Sources */,
 				DB2C84B52153ECBC0048BA02 /* Frameworks */,
 				DB2C84B62153ECBC0048BA02 /* Resources */,
+				67FF858A9FE0B56EFE26B9E9 /* [CP] Embed Pods Frameworks */,
+				DAC7226EA04B28751B5CD132 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD9E2E12158C69900C1205B /* CatalogResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +410,227 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EB334E287C153A47EDA1247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EdaYandex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BB94AE3CC064FC152C30DBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		200C27B1C8B96417E6584903 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandex/Pods-EdaYandex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FF858A9FE0B56EFE26B9E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71763FEDC18FFC8FF2938529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EdaYandexTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D658C7BC446A743826A6B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EdaYandexUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33903B123F25DF578B3E0B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexTests/Pods-EdaYandexTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexTests/Pods-EdaYandexTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC7226EA04B28751B5CD132 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexUITests/Pods-EdaYandexUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5BF5CDAA8F93366F61FDD57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdaYandexTests/Pods-EdaYandexTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB2C84952153ECBA0048BA02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2C849F2153ECBA0048BA02 /* ViewController.swift in Sources */,
+				DB2C84E6215449330048BA02 /* PlaceCatalogTableViewCell.swift in Sources */,
+				DB2C84DA2153F88F0048BA02 /* APIManager.swift in Sources */,
+				DB2C84D32153F66B0048BA02 /* StoryboardInitializable.swift in Sources */,
+				DB2C84CF2153F4960048BA02 /* PlacesCatalogViewModel.swift in Sources */,
+				DB2C84CB2153EFAB0048BA02 /* AppCoordinator.swift in Sources */,
+				DB2C84D12153F4A10048BA02 /* PlacesCatalogCoordinator.swift in Sources */,
+				DB2C849F2153ECBA0048BA02 /* PlacesCatalogViewController.swift in Sources */,
 				DB2C849D2153ECBA0048BA02 /* AppDelegate.swift in Sources */,
+				DB2C84F6215572FA0048BA02 /* LoaderLibrary.swift in Sources */,
+				DB7FC6272157D20600F86E79 /* SDWebLoaderManager.swift in Sources */,
+				DB7FC6252157D1E000F86E79 /* NukeManager.swift in Sources */,
+				DB2C84DF2153F9E40048BA02 /* PlacesCatalogNetworkService.swift in Sources */,
+				DB2C84F0215571AB0048BA02 /* ImageLoadersViewCoordinator.swift in Sources */,
+				DB2C84F2215571B60048BA02 /* ImageLoadersViewController.swift in Sources */,
+				DBD9E2E52158D18400C1205B /* StubResponse.swift in Sources */,
+				DB7FC6232157D11000F86E79 /* KingfisherManager.swift in Sources */,
+				DB7FC6292157D25D00F86E79 /* LoaderProtocol.swift in Sources */,
+				DB2C84EE2155719F0048BA02 /* ImageLoadersViewModel.swift in Sources */,
+				DB2C84E22153FB5C0048BA02 /* Place.swift in Sources */,
+				DB2C84CD2153F0820048BA02 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD9E2E32158CBDA00C1205B /* PlacesCatalogViewModelSpec.swift in Sources */,
 				DB2C84B22153ECBC0048BA02 /* EdaYandexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +743,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -422,17 +797,20 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		DB2C84C22153ECBC0048BA02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08CFB2F1047868273202BEF /* Pods-EdaYandex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KC7UXU4393;
 				INFOPLIST_FILE = EdaYandex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +824,13 @@
 		};
 		DB2C84C32153ECBC0048BA02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2406B453D3C9E42AE79971 /* Pods-EdaYandex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KC7UXU4393;
 				INFOPLIST_FILE = EdaYandex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +844,7 @@
 		};
 		DB2C84C52153ECBC0048BA02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F9BDC9B7179740B11C9A8D /* Pods-EdaYandexTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +866,7 @@
 		};
 		DB2C84C62153ECBC0048BA02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D088587E23682ED6012DB1 /* Pods-EdaYandexTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +888,7 @@
 		};
 		DB2C84C82153ECBC0048BA02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79FE9F84AA6E4AB7346EB8E /* Pods-EdaYandexUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +909,7 @@
 		};
 		DB2C84C92153ECBC0048BA02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4FFF3C65DD3B9F43650E90 /* Pods-EdaYandexUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
